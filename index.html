@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Головна | Phone Zone</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="home">
+<header><div class="topbar"><a class="logo" href="index.html">PHONE <span>ZONE</span></a>
+<form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Пошук техніки..."><button type="submit">Знайти</button></form>
+<nav class="nav-actions"><a href="index.html">Головна</a><a href="catalog.html">Каталог</a><button class="cart-link" id="cartToggle">🛒 Кошик <span class="cart-count" id="cartCount">0</span></button></nav></div></header>
+<div class="cart-panel" id="cartPanel"><div class="cart-top"><h3>Ваш кошик</h3><button class="close" id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-total" id="cartTotal">Разом: 0 ₴</div><p class="notice">Демонстраційний кошик — оформлення замовлення не передбачено.</p></div>
+<main>
+    <section class="hero"><h1>Техніка, яка надихає</h1><p>Знаходь свої улюблені гаджети у Phone Zone.</p><a class="primary" href="catalog.html">Перейти до каталогу</a></section>
+    <div class="layout"><aside class="sidebar"><div class="filter-group"><h3>Категорії</h3><div id="categoryFilters"></div></div>
+<div class="filter-group"><h3>Ціна, ₴</h3><div class="price-row"><input id="minPrice" type="number" min="0" placeholder="Від"><input id="maxPrice" type="number" min="0" placeholder="До"></div></div>
+<div class="filter-group"><h3>Виробник</h3><div id="brandFilters"></div></div><button class="primary" id="resetFilters" style="width:100%;padding:10px;border-radius:7px">Скинути фільтри</button></aside>
+<section><div class="catalog-head"><div><h2>Популярні товари</h2><div class="notice" id="resultCount"></div></div><select class="sort" id="sortSelect"><option value="popular">За популярністю</option><option value="cheap">Спочатку дешевші</option><option value="expensive">Спочатку дорожчі</option><option value="name">За назвою</option></select></div><div class="products" id="products"></div></section></div></main>
+<footer><div class="footer-brand">PHONE <span style="color:var(--red)">ZONE</span></div><div>Демонстраційний магазин техніки · 2026</div></footer>
+<script src="script.js"></script></body></html>
